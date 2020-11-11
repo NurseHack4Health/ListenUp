@@ -11,9 +11,10 @@ Considering a microphone mask attachment which connects to a voice to text app. 
 ## Members 
 * Elyse
 * Mary
-* Joseph
-*
-*
+* Jose
+* Jacob
+* Odelee
+* Pam
 
 ## Solution Details
 Technology aimed to improve care through effective communication with the hearing-impaired population. Masks take away their ability to lip read and cause muffled sounds (the feedback is extra unpleasant when wearing hearing aids). And face shields bend sound waves. All of this creates challenges particularly for hearing-impaired patients. We as care providers do not all speak sign language and translators are not available at all times, for every interaction. This technology would greatly improve care. We want our patients to feel seen and heard, not isolated as a consequence of mask wearing.  
