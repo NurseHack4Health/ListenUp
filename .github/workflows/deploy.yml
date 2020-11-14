@@ -18,11 +18,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: npm ci 
-        working-directory: src
-        run: npm ci
+      working-directory: src
+      run: npm ci
     - name: build 
-        working-directory: src
-        run: npm run build
+      working-directory: src
+      run: npm run build
     - uses: lauchacarro/Azure-Storage-Action@master
       with:
         enabled-static-website: 'true'
