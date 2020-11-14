@@ -18,14 +18,14 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: npm ci 
-        working-directory: '${{ github.workspace }}/src'
+        working-directory: src
         run: npm ci
     - name: build 
-        working-directory: '${{ github.workspace }}/src'
+        working-directory: src
         run: npm run build
     - uses: lauchacarro/Azure-Storage-Action@master
       with:
         enabled-static-website: 'true'
-        folder: '${{ github.workspace }}/src/dist'
+        folder: src/dist
         index-document: 'index.html'
         connection-string: ${{ secrets.azure_storage_connection_string }}
