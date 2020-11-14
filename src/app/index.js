@@ -48,7 +48,7 @@ document.getElementById('startRecognizer').onclick = function () {
 				} else {
 					let gifEl = document.getElementById('gifEl');
 					gifEl.src = '';
-					document.getElementById('teresultsxt').innerHTML = '';
+					document.getElementById('results').innerHTML = '';
 				}
 			},
 			(error) => {
