@@ -27,5 +27,5 @@ jobs:
       with:
         enabled-static-website: 'true'
         folder: src/dist
-        index-document: 'index.html'
+        blob-container-name: app 
         connection-string: ${{ secrets.azure_storage_connection_string }}
