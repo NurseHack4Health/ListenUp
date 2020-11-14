@@ -23,6 +23,9 @@ jobs:
     - name: build 
       working-directory: src
       run: npm run build
+    - uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '3.0.100'
     - uses: lauchacarro/Azure-Storage-Action@master
       with:
         enabled-static-website: 'true'
