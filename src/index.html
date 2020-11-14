@@ -1,23 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Parcel Sandbox</title>
-    <meta charset="UTF-8" />
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<title>Koko</title>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+	</head>
 
-  <body>
-    <div>
-      <select id="option">
-        <option value="text">Speech To Text</option>
-        <option value="asl">Speech To ASL</option>
-      </select>
+	<body class="container-fluid">
+		<h1>Koko</h1>
+
+	
+    <div class="row">
+      <div class="avatar-wrapper"><img id="gifEl" class="static" /> </div>
+      <div class="col-md-3" id="results"></div>
+      
     </div>
-    <button id="startRecognizer">Start Recognizer</button>
-    <button id="stopRecognizer">Stop Recognizer</button>
-    <div id="status">Status: stopped</div>
-    <div id="text"></div>
-    <img id="gifEl" style="height: 25vh;" />
 
-    <script src="app/index.js"></script>
-  </body>
+    <h2 class="heading">Translation Option</h2>
+		<div class="btn-group btn-group-toggle" data-toggle="buttons">
+			<label class="btn btn-secondary active option-button">
+				<input
+					type="radio"
+					name="options"
+					id="text"
+					autocomplete="off"
+					checked
+				/>
+				Speech to Text
+			</label>
+			<label class="btn btn-secondary option-button">
+				<input
+					type="radio"
+					name="options"
+					id="asl"
+					autocomplete="off"
+				/>
+				Speech to ASL
+			</label>
+		</div>
+
+		<div class="control-buttons">
+			<button class="btn btn-primary" id="startRecognizer">
+				Start Recognizer
+			</button>
+			<button class="btn btn-primary d-none" id="stopRecognizer">
+				Stop Recognizer
+			</button>
+		</div>
+
+    
+
+		<script src="app/index.js"></script>
+
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+	<head> </head>
+	<body></body>
 </html>

@@ -7,7 +7,7 @@ const sdk = SpeechSDK;
  //todo: add key
 const speechConfig = sdk.SpeechConfig.fromSubscription(
 
- "theAzureKeyGoesHere",
+ "22cfa769a87240e28a9bb026821d790f",
   "eastus"
 );
 
