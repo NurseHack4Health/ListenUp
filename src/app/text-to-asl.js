@@ -63,9 +63,3 @@ export function textToAsl(phrase$) {
   );
 }
 
-// const textToAsl = {
-//   aslSubject$,
-//   aslGif$
-// };
-
-// export { textToAsl };
