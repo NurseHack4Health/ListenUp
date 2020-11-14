@@ -51,7 +51,7 @@ body {
 
 .avatar-wrapper {
   border-radius: 1rem;
-  width: 33%;
+  /* width: 33%; */
   background-color: #DAD9D9;
   align-content: center;
   height: 50vh;
