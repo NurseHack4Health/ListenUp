@@ -111,7 +111,7 @@ const Layout = ({children}) => {
     </div>
   </nav>
 
-  <div class="bg-gray-200 overflow-hidden rounded-lg h-screen">
+  <div class="bg-gray-200 rounded-lg min-h-screen">
   <div class="py-10">
     <header>
       {/* <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
