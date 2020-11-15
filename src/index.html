@@ -1,66 +1,48 @@
 <!DOCTYPE html>
 <html>
 	<head>
-    
 		<meta charset="UTF-8" />
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1, shrink-to-fit=no"
 		/>
 		<title>Koko</title>
-		<!-- <link
-			rel="stylesheet"
-			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-			crossorigin="anonymous"
-		/> -->
 	</head>
 
 	<body class="container-fluid">
 		<h1>Koko</h1>
+		<div class="row">
+			<div class="avatar-wrapper"><img id="gifEl" class="static" /></div>
+			<div class="results-wrapper"><div id="results"></div></div>
+		</div>
 
-	
-    <div class="row">
-      <div class="avatar-wrapper col-md-4"><img id="gifEl" class="static" /> </div>
-      <div class="col-md-3" ><div id="results"></div></div>
-      
-    </div>
-
-    <h2 class="heading">Translation Option</h2>
-		<div class="btn-group btn-group-toggle" data-toggle="buttons">
-			
-				<input
-					type="radio"
-					name="options"
-					id="text"
-					autocomplete="off"
-					checked
-        />
-      <label for="text" class="btn btn-secondary option-button">
+		<h2>Translation Option</h2>
+		<div>
+			<input
+				type="radio"
+				name="options"
+				id="text"
+				autocomplete="off"
+				checked
+			/>
+			<label for="text" class="option-button">
 				Speech to Text
 			</label>
-			
-				<input
-					type="radio"
-					name="options"
-					id="asl"
-					autocomplete="off"
-        />
-        <label for="asl" class="btn btn-secondary option-button">
+
+			<input type="radio" name="options" id="asl" autocomplete="off" />
+			<label for="asl" class="option-button">
 				Speech to ASL
 			</label>
 		</div>
 
 		<div class="control-buttons">
-			<button class="btn btn-primary" id="startRecognizer">
+			<button id="startRecognizer">
 				Start Recognizer
 			</button>
-			<button class="btn btn-primary d-none" id="stopRecognizer">
+			<button class="hidden" id="stopRecognizer">
 				Stop Recognizer
 			</button>
 		</div>
-
-    
 
 		<script src="app/index.js"></script>
 
