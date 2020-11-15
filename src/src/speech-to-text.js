@@ -25,10 +25,10 @@ recognizer.recognizing = (s, e) => {
 const recognized$ = new BehaviorSubject("");
 
 recognizer.recognized = (s, e) => {
-  if (e.result.reason == sdk.ResultReason.RecognizedSpeech) {
+  if (e.result.reason === sdk.ResultReason.RecognizedSpeech) {
     console.log(`RECOGNIZED: Text=${e.result.text}`);
     recognized$.next(e.result.text);
-  } else if (e.result.reason == sdk.ResultReason.NoMatch) {
+  } else if (e.result.reason === sdk.ResultReason.NoMatch) {
     console.log("NOMATCH: Speech could not be recognized.");
   }
 };
@@ -40,7 +40,7 @@ recognizer.speechEndDetected = (s, e) => {
 recognizer.canceled = (s, e) => {
   console.log(`CANCELED: Reason=${e.reason}`);
 
-  if (e.reason == sdk.CancellationReason.Error) {
+  if (e.reason === sdk.CancellationReason.Error) {
     console.log(`"CANCELED: ErrorCode=${e.errorCode}`);
     console.log(`"CANCELED: ErrorDetails=${e.errorDetails}`);
     console.log("CANCELED: Did you update the subscription info?");

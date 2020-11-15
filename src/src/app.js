@@ -8,8 +8,7 @@ import { scan } from 'rxjs/operators';
 
 import staticAvatar from './avatar.png';
 
-import React, { useEffect, useState, useRef } from 'react';
-import axios from 'axios';
+import React, { useState } from 'react';
 
 // let subscriber;
 
@@ -257,7 +256,7 @@ export default function App() {
 			<h1>Koko</h1>
 			<div className="row">
 				<div className="avatar-wrapper">
-					<img id="gifEl" src={gifSrc} />
+					<img id="gifEl" src={gifSrc} alt="interpreter avatar" />
 				</div>
 				<div className="results-wrapper">
 					<div id="results">
@@ -307,7 +306,8 @@ export default function App() {
 					Start Recognizer
 				</button>
 				<button
-					id="stopRecognizer"
+          id="stopRecognizer"
+          onClick={stopRecognizer}
 					className={isRunning ? null : 'hidden'}
 				>
 					Stop Recognizer
