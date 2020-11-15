@@ -28,6 +28,6 @@ jobs:
         dotnet-version: '3.0.100'
     - uses: lauchacarro/Azure-Storage-Action@master
       with:
-        folder: src/dist
+        folder: src/build
         blob-container-name: app 
         connection-string: ${{ secrets.azure_storage_connection_string }}

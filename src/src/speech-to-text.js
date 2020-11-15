@@ -2,7 +2,7 @@ import "microsoft-cognitiveservices-speech-sdk/distrib/browser/microsoft.cogniti
 
 import { BehaviorSubject } from "rxjs";
 
-const sdk = SpeechSDK;
+const sdk = window.SpeechSDK;
 
  //todo: add key
 const speechConfig = sdk.SpeechConfig.fromSubscription(

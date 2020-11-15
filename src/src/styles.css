@@ -38,9 +38,9 @@ body {
 	color: #000;
 }
 
-#gifEl.static {
+/* #gifEl.static {
 	content: url('avatar.png');
-}
+} */
 
 #gifEl {
 	height: calc(50vh - 10px);
