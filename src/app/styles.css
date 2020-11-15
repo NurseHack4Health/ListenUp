@@ -1,61 +1,65 @@
 body {
-  font-family: sans-serif;
-  background-color: #6d6e70;
-  color: #fff;
+	font-family: sans-serif;
+	background-color: #6d6e70;
+	color: #fff;
 }
 
 .control-buttons {
-  margin-top: 3rem;
+	margin-top: 3rem;
 }
 
 #results {
-  background-color: #003359;
-  font-size: 2rem;
-  color: #fff;
-  border-radius: 1rem;
-  max-height: 33vh;
-  overflow-y: hidden;
-  display: flex;
+	background-color: #003359;
+	font-size: 2rem;
+	color: #fff;
+	border-radius: 1rem;
+	height: 33vh;
+	overflow-y: hidden;
+	display: flex;
   flex-direction: column-reverse;
-  /* align-items: flex-end; */
+  /* justify-content: flex-end; */
+	/* align-items: flex-end; */
 }
 
 .option-button {
-  background-color: #F8933C;
-  color: #000;
+	background-color: #f8933c;
+	color: #000;
+	margin-right: 1rem;
 }
 
 .option-button:hover {
-  background-color: #C67431;
-  color: #000;
+	background-color: #c67431;
+	color: #000;
 }
 
-.btn.btn-secondary.option-button.active:not(:disabled){
+/* .btn.btn-secondary.option-button.active:not(:disabled){
   background-color: #C67431;
   color: #000;
-}
+} */
 
 .btn-primary {
-  background-color: #8BC657;
-  color: #000;
+	background-color: #8bc657;
+	color: #000;
 }
 
 #gifEl.static {
-  content:url("avatar.png");
+	content: url('avatar.png');
 }
 
 #gifEl {
-  height: 50vh;
-  border-radius: 1rem;
+	height: calc(50vh - 10px);
+	/* border-radius: 1rem; */
 }
 
 .avatar-wrapper {
-  border-radius: 1rem;
-  /* width: 33%; */
-  background-color: #DAD9D9;
-  align-content: center;
-  height: 50vh;
-  margin-right: 1rem;
+	border-radius: 1rem;
+	/* width: 33%; */
+	background-color: #dad9d9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+	height: 50vh;
+	margin-right: 1rem;
 }
 /* 
 #gifEl {
@@ -63,10 +67,63 @@ body {
   min-width: 25%;
 } */
 
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+}
 
+.btn {
+	padding: 0.5rem;
+	border-radius: 1rem;
+	border: none;
+	font-size: 16px;
+}
 
+.d-none {
+	display: none;
+}
 
+/* label.btn:has(> input:checked) {
+  
+} */
 
+input[type='radio'] {
+	display: none;
+}
 
+input[type='radio']:checked + label {
+	background-color: #995726;
+	/* font-weight: 600; */
+}
 
+.btn-primary:hover {
+	background-color: #709e45;
+}
 
+.row {
+	display: flex;
+	flex-direction: row;
+	width: 66%;
+	/* align-items: stretch; */
+}
+
+@media (max-width: 900px) {
+	.row {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    /* justify-content: ; */
+  }
+  
+ 
+}
+
+.col-md-3 {
+	/* width: 25%; */
+	flex: 1;
+}
+
+.col-md-4 {
+	/* width: 33%; */
+	flex: 1.25;
+}

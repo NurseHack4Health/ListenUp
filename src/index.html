@@ -8,12 +8,12 @@
 			content="width=device-width, initial-scale=1, shrink-to-fit=no"
 		/>
 		<title>Koko</title>
-		<link
+		<!-- <link
 			rel="stylesheet"
 			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 			crossorigin="anonymous"
-		/>
+		/> -->
 	</head>
 
 	<body class="container-fluid">
@@ -22,29 +22,31 @@
 	
     <div class="row">
       <div class="avatar-wrapper col-md-4"><img id="gifEl" class="static" /> </div>
-      <div class="col-md-3" id="results"></div>
+      <div class="col-md-3" ><div id="results"></div></div>
       
     </div>
 
     <h2 class="heading">Translation Option</h2>
 		<div class="btn-group btn-group-toggle" data-toggle="buttons">
-			<label class="btn btn-secondary active option-button">
+			
 				<input
 					type="radio"
 					name="options"
 					id="text"
 					autocomplete="off"
 					checked
-				/>
+        />
+      <label for="text" class="btn btn-secondary option-button">
 				Speech to Text
 			</label>
-			<label class="btn btn-secondary option-button">
+			
 				<input
 					type="radio"
 					name="options"
 					id="asl"
 					autocomplete="off"
-				/>
+        />
+        <label for="asl" class="btn btn-secondary option-button">
 				Speech to ASL
 			</label>
 		</div>
@@ -62,7 +64,7 @@
 
 		<script src="app/index.js"></script>
 
-		<script
+		<!-- <script
 			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 			crossorigin="anonymous"
@@ -76,6 +78,6 @@
 			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 			crossorigin="anonymous"
-		></script>
+		></script> -->
 	</body>
 </html>
