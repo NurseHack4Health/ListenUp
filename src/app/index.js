@@ -10,8 +10,8 @@ document.getElementById('startRecognizer').onclick = function () {
 	recognizer.startRecognizer();
 	// document.getElementById("status").innerHTML = "Status: running";
 	// recognizer.recognized$.next("hello world");
-	document.getElementById('stopRecognizer').classList.remove('d-none');
-	document.getElementById('startRecognizer').classList.add('d-none');
+	document.getElementById('stopRecognizer').classList.remove('hidden');
+	document.getElementById('startRecognizer').classList.add('hidden');
 
 	// const option = document.getElementById("option").value;
 	// console.log(option);
@@ -64,7 +64,7 @@ document.getElementById('startRecognizer').onclick = function () {
 document.getElementById('stopRecognizer').onclick = function () {
 	recognizer.stopRecognizer();
 	subscriber.unsubscribe();
-	document.getElementById('stopRecognizer').classList.add('d-none');
-	document.getElementById('startRecognizer').classList.remove('d-none');
+	document.getElementById('stopRecognizer').classList.add('hidden');
+	document.getElementById('startRecognizer').classList.remove('hidden');
 	// document.getElementById("status").innerHTML = "Status: stopped";
 };
