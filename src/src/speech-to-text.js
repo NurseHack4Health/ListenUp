@@ -1,8 +1,11 @@
-import "microsoft-cognitiveservices-speech-sdk/distrib/browser/microsoft.cognitiveservices.speech.sdk.bundle.js";
+// import * as sdk from "microsoft-cognitiveservices-speech-sdk/distrib/browser/microsoft.cognitiveservices.speech.sdk.bundle.js";
+
 
 import { BehaviorSubject } from "rxjs";
 
-const sdk = window.SpeechSDK;
+var sdk = require("microsoft-cognitiveservices-speech-sdk");
+
+// const sdk = window.SpeechSDK;
 
  //todo: add key
 const speechConfig = sdk.SpeechConfig.fromSubscription(
