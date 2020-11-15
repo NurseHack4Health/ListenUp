@@ -166,7 +166,7 @@ export default function App() {
 					} else {
 						// let gifEl = document.getElementById('gifEl');
 						// gifEl.src = '';
-						setGifSrc('');
+						setGifSrc(staticAvatar);
 						// document.getElementById('results').innerHTML = '';
 						setPhrases([]);
 					}
